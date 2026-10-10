@@ -6,8 +6,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lexend:wght@600&family=Amiri:wght@700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F6F2ED;--surface:#FFFFFF;--ink:#1E1718;--ink2:#5E5354;--muted:#8C8180;--rule:#E5DCD3;--accent:#7A1E28;--accent-ink:#FFFFFF;--ar:rgba(122,30,40,.09)}
-@media (prefers-color-scheme: dark){:root{--bg:#141011;--surface:#1E1819;--ink:#F1ECEA;--ink2:#C2B7B5;--muted:#8F8482;--rule:#342A2B;--accent:#E5969E;--accent-ink:#141011;--ar:rgba(229,150,158,.10)}}
+:root{--bg:#F6F2ED;--surface:#FFFFFF;--ink:#1E1718;--ink2:#5E5354;--muted:#8C8180;--rule:#E5DCD3;--accent:#7A1E28;--ar:rgba(122,30,40,.09)}
+@media (prefers-color-scheme: dark){:root{--bg:#141011;--surface:#1E1819;--ink:#F1ECEA;--ink2:#C2B7B5;--muted:#8F8482;--rule:#342A2B;--accent:#E5969E;--ar:rgba(229,150,158,.10)}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
@@ -44,7 +44,7 @@ p{margin:0 0 16px}
 .also dd{margin:0;color:var(--ink2);font-size:16px}
 .band{background:var(--surface);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .pricing{padding:64px 0}
-.plans{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:28px;border:1px solid var(--rule);border-radius:18px;overflow:hidden}
+.plans{display:grid;grid-template-columns:1fr 1fr;margin-top:28px;border:1px solid var(--rule);border-radius:18px;overflow:hidden}
 .plan{padding:30px 32px}
 .plan + .plan{border-left:1px solid var(--rule)}
 .plan.plus{background:var(--bg)}
@@ -70,21 +70,14 @@ summary::after{content:"+";color:var(--accent);font-weight:400;font-size:22px;li
 details[open] summary::after{content:"\2212"}
 details > div{padding-top:10px;color:var(--ink2)}
 .contact{margin-top:40px;padding:24px 26px;background:var(--surface);border:1px solid var(--rule);border-radius:16px}
-@media (max-width:820px){
- .hero,.feature{grid-template-columns:1fr;gap:32px}
- .hero{padding-top:12px}
- .feature:nth-of-type(even) .shot{order:0}
- .plans{grid-template-columns:1fr}
- .plan + .plan{border-left:0;border-top:1px solid var(--rule)}
- .nav ul{gap:18px}
-}
+@media (max-width:820px){.hero,.feature{grid-template-columns:1fr;gap:32px}.hero{padding-top:12px}.feature:nth-of-type(even) .shot{order:0}.plans{grid-template-columns:1fr}.plan + .plan{border-left:0;border-top:1px solid var(--rule)}.nav ul{gap:18px}}
 @media (max-width:460px){.nav ul li.hide-s{display:none}}
 </style></head><body>
 <div class="wrap"><nav class="nav" aria-label="Main"><a class="brand" href="/">ilem</a>
 <ul><li class="hide-s"><a href="/#features">Features</a></li><li><a href="/#pricing">Pricing</a></li><li><a href="/support">Support</a></li></ul></nav></div>
 <main class="doc"><h1>Ilem Privacy Policy</h1>
-<p><strong>Effective date:</strong> 23 September 2026
-<strong>Version:</strong> 1.0</p>
+<p><strong>Effective date:</strong> 10 October 2026
+<strong>Version:</strong> 1.1</p>
 <p>Ilem is made by Ilem Ltd, a company registered in England and Wales (company number 17463494), registered office 71-75 Shelton Street, Covent Garden, London WC2H 9JQ. In this policy, "we", "us" and "Ilem" mean Ilem Ltd. We are the data controller for the personal data described here.</p>
 <p>If you have any question about this policy or your data, email hello@ilemapp.com.</p>
 <h2>1. The short version</h2>
@@ -92,13 +85,14 @@ details > div{padding-top:10px;color:var(--ink2)}
 <li>You can use most of Ilem without an account, and without giving us anything.</li>
 <li>If you sign in, we hold your name, email address and a user ID so you can use your free picks and ilem Plus.</li>
 <li>Your notes, progress, quiz results, bookmarks and downloads are stored on your phone, not on our servers.</li>
-<li>Prayer times are worked out on your phone. Your location never comes to us.</li>
+<li>Prayer times and adhān reminders are worked out on your phone. Your location never comes to us.</li>
+<li>Books you add to your bookshelf stay on your phone. We never see them.</li>
 <li>We do not use analytics, advertising or tracking tools, and we do not sell or share your data for marketing.</li>
 <li>You can delete your account from inside the app at any time.</li>
 </ul>
 <h2>2. What we collect and why</h2>
 <h3>2.1 Using Ilem without signing in</h3>
-<p>You can read the Qur'an, listen to lectures and Benefits, read books and use prayer times without an account. In that case we collect no personal data ourselves. Some data still passes to the services that deliver the app's content, described in section 4.</p>
+<p>You can read the Qur'an, listen to lectures and Benefits, read your own books and use prayer times and reminders without an account. In that case we collect no personal data ourselves. Some data still passes to the services that deliver the app's content, described in section 4.</p>
 <h3>2.2 Your account</h3>
 <p>When you sign in with Google or Apple we receive:</p>
 <ul>
@@ -117,20 +111,25 @@ details > div{padding-top:10px;color:var(--ink2)}
 <p>The only place your coordinates are sent is to your phone's built-in address lookup service (provided by Apple on iPhone and Google on Android) to turn them into a town name. They are not sent to us or to anyone else.</p>
 <p>You can refuse or withdraw location permission at any time in your phone's Settings. Prayer times will then be unavailable until you allow it again.</p>
 <p>Legal basis: your consent, given through the phone's permission prompt.</p>
-<h3>2.5 Data kept on your phone only</h3>
+<h3>2.5 Adhān reminders</h3>
+<p>If you turn on adhān reminders, the app asks your phone for permission to show notifications and schedules them on your phone for each prayer time. The reminders are created and stored on your phone only. We do not run a notification server, and no notification content, prayer times or location is sent to us. You can turn reminders off in the app's Settings or withdraw notification permission in your phone's Settings at any time.</p>
+<p>Legal basis: your consent, given through the phone's permission prompt.</p>
+<h3>2.6 Data kept on your phone only</h3>
 <p>The following is stored on your phone and is not sent to us:</p>
 <ul>
 <li>personal notes you write on lessons and Benefits</li>
 <li>lesson progress, listening time, quiz results and revision records</li>
 <li>bookmarks and saved items, including any note you attach to them</li>
 <li>which lessons and Benefits you have unlocked with free picks</li>
-<li>downloaded audio and books</li>
+<li>downloaded audio</li>
+<li>PDF books you add to your bookshelf, and your reading position in them</li>
+<li>your prayer time and reminder settings</li>
 <li>display preferences such as dark mode, text size and reciter</li>
 </ul>
 <p>If you delete the app, this data is deleted with it. Your phone's own backup (iCloud or Google backup) may include it, under Apple's or Google's terms.</p>
 <p>On iPhone, when you spend your free picks the app stores a small marker in the phone's secure storage that records only that picks have been used on this device. It contains nothing that identifies you and survives reinstalling the app. Its purpose is to stop free picks being reset by creating new accounts.</p>
-<h3>2.6 Technical data</h3>
-<p>Like any app, Ilem connects to services over the internet. When it does, those services see your device's IP address and standard connection details. This includes Google (for sign-in), RevenueCat (for subscriptions), Cloudflare (which hosts our audio and book files) and the Al Quran Cloud API (which provides the Qur'an text, translation and recitations in the scroll reader). We do not use this information to identify or profile you.</p>
+<h3>2.7 Technical data</h3>
+<p>Like any app, Ilem connects to services over the internet. When it does, those services see your device's IP address and standard connection details. This includes Google (for sign-in), RevenueCat (for subscriptions), Cloudflare (which hosts our audio and images) and the Al Quran Cloud API (which provides the Qur'an text, translation and recitations in the scroll reader). We do not use this information to identify or profile you.</p>
 <p>Google's Firebase service, which handles sign-in, also creates an installation identifier for the app on your device. It is used to make sign-in work and is not used for analytics or advertising.</p>
 <p>Legal basis: our legitimate interest in running a working, secure app.</p>
 <h2>3. What we do not do</h2>
@@ -171,7 +170,7 @@ details > div{padding-top:10px;color:var(--ink2)}
 <tr>
 <td>Cloudflare</td>
 <td>IP address and file requests</td>
-<td>delivering audio and book files</td>
+<td>delivering audio and images</td>
 </tr>
 <tr>
 <td>Islamic Network (alquran.cloud)</td>
@@ -192,7 +191,7 @@ details > div{padding-top:10px;color:var(--ink2)}
 <li>Support emails: up to two years after the matter is closed.</li>
 </ul>
 <h2>7. Deleting your account</h2>
-<p>Go to Profile, then Settings, then Delete account. The app will ask you to sign in again to confirm it is you, then it deletes your account from our sign-in provider, revokes the Apple or Google sign-in link, and unlinks your subscription record. Data kept on your phone (section 2.5) is not deleted by this; delete the app to remove it. An active subscription is not cancelled by deleting your account; cancel it in your Apple or Google subscription settings.</p>
+<p>Go to Profile, then Settings, then Delete account. The app will ask you to sign in again to confirm it is you, then it deletes your account from our sign-in provider, revokes the Apple or Google sign-in link, and unlinks your subscription record. Data kept on your phone (section 2.6) is not deleted by this; delete the app to remove it. An active subscription is not cancelled by deleting your account; cancel it in your Apple or Google subscription settings.</p>
 <h2>8. Your rights</h2>
 <p>Under UK data protection law you have the right to:</p>
 <ul>

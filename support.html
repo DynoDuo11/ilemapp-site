@@ -1,13 +1,13 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ilem support</title>
-<meta name="description" content="Help with ilem: subscriptions, refunds, restoring purchases, deleting your account and contacting us.">
+<meta name="description" content="Help with ilem: subscriptions, refunds, restoring purchases, adhan reminders, your bookshelf, deleting your account and contacting us.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237A1E28'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='white' text-anchor='middle'%3Ei%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lexend:wght@600&family=Amiri:wght@700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F6F2ED;--surface:#FFFFFF;--ink:#1E1718;--ink2:#5E5354;--muted:#8C8180;--rule:#E5DCD3;--accent:#7A1E28;--accent-ink:#FFFFFF;--ar:rgba(122,30,40,.09)}
-@media (prefers-color-scheme: dark){:root{--bg:#141011;--surface:#1E1819;--ink:#F1ECEA;--ink2:#C2B7B5;--muted:#8F8482;--rule:#342A2B;--accent:#E5969E;--accent-ink:#141011;--ar:rgba(229,150,158,.10)}}
+:root{--bg:#F6F2ED;--surface:#FFFFFF;--ink:#1E1718;--ink2:#5E5354;--muted:#8C8180;--rule:#E5DCD3;--accent:#7A1E28;--ar:rgba(122,30,40,.09)}
+@media (prefers-color-scheme: dark){:root{--bg:#141011;--surface:#1E1819;--ink:#F1ECEA;--ink2:#C2B7B5;--muted:#8F8482;--rule:#342A2B;--accent:#E5969E;--ar:rgba(229,150,158,.10)}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
@@ -44,7 +44,7 @@ p{margin:0 0 16px}
 .also dd{margin:0;color:var(--ink2);font-size:16px}
 .band{background:var(--surface);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .pricing{padding:64px 0}
-.plans{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:28px;border:1px solid var(--rule);border-radius:18px;overflow:hidden}
+.plans{display:grid;grid-template-columns:1fr 1fr;margin-top:28px;border:1px solid var(--rule);border-radius:18px;overflow:hidden}
 .plan{padding:30px 32px}
 .plan + .plan{border-left:1px solid var(--rule)}
 .plan.plus{background:var(--bg)}
@@ -70,14 +70,7 @@ summary::after{content:"+";color:var(--accent);font-weight:400;font-size:22px;li
 details[open] summary::after{content:"\2212"}
 details > div{padding-top:10px;color:var(--ink2)}
 .contact{margin-top:40px;padding:24px 26px;background:var(--surface);border:1px solid var(--rule);border-radius:16px}
-@media (max-width:820px){
- .hero,.feature{grid-template-columns:1fr;gap:32px}
- .hero{padding-top:12px}
- .feature:nth-of-type(even) .shot{order:0}
- .plans{grid-template-columns:1fr}
- .plan + .plan{border-left:0;border-top:1px solid var(--rule)}
- .nav ul{gap:18px}
-}
+@media (max-width:820px){.hero,.feature{grid-template-columns:1fr;gap:32px}.hero{padding-top:12px}.feature:nth-of-type(even) .shot{order:0}.plans{grid-template-columns:1fr}.plan + .plan{border-left:0;border-top:1px solid var(--rule)}.nav ul{gap:18px}}
 @media (max-width:460px){.nav ul li.hide-s{display:none}}
 </style></head><body>
 <div class="wrap"><nav class="nav" aria-label="Main"><a class="brand" href="/">ilem</a>
@@ -86,32 +79,27 @@ details > div{padding-top:10px;color:var(--ink2)}
 <main class="doc">
 <h1>Support</h1>
 <p class="lede">Answers to the common questions. If yours isn't here, email <a href="mailto:hello@ilemapp.com">hello@ilemapp.com</a> and we'll reply within two working days.</p>
-
 <details><summary>How do I cancel ilem Plus?</summary><div>
 <p>Subscriptions are managed by Apple or Google, so you cancel in your store settings. In the app, go to Profile, then Settings, then Manage subscription. Or on iPhone open Settings, tap your name, then Subscriptions. On Android open Google Play, tap your profile, then Payments and subscriptions.</p>
 <p>Cancel at least 24 hours before the renewal date. You keep ilem Plus until the end of the period you've paid for.</p></div></details>
-
 <details><summary>Can I get a refund?</summary><div>
 <p>Refunds are handled by Apple or Google, because they take the payment. For the App Store, request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. For Google Play, use the refund option in your Play order history. We can't issue refunds ourselves.</p></div></details>
-
 <details><summary>I reinstalled the app or changed phone and lost ilem Plus</summary><div>
 <p>Sign in with the same account, then go to Profile, then Settings, then Restore purchases. Your subscription is linked to the Apple ID or Google account you bought it with.</p></div></details>
-
 <details><summary>What are free picks?</summary><div>
-<p>When you sign in you get a few free picks. Each one permanently unlocks the study tools (transcript, summary, notes, quiz and revision) on a lecture or daily benefit of your choice, without paying. The app tells you how many you have before you use one.</p></div></details>
-
+<p>When you sign in you get free picks. Each one permanently unlocks the study tools (transcript, summary, notes, quiz and revision) on a lecture or daily benefit of your choice, without paying. The app tells you how many you have before you use one.</p></div></details>
+<details><summary>The adhān reminder didn't sound</summary><div>
+<p>Turn reminders on in Profile, then Settings, then Notifications, and allow notifications when your phone asks. Check that notifications for ilem are allowed in your phone's Settings, and that Focus or Do Not Disturb isn't silencing them. Reminders are scheduled ahead on your phone, so open the app every week or so to keep them topped up. While ilem is playing a lecture or recitation, the reminder stays silent so it doesn't interrupt you.</p></div></details>
+<details><summary>How do I add books to my bookshelf?</summary><div>
+<p>Open Learn, then Books, and add a PDF from your phone's Files. The book stays on your phone; we never upload or see it. Please only add books you have the right to use.</p></div></details>
 <details><summary>How do I delete my account?</summary><div>
-<p>Go to Profile, then Settings, then Delete account. You'll be asked to sign in again to confirm. This removes your account and unlinks your subscription. It doesn't cancel the subscription itself, so cancel that in your store settings first. Notes and progress are stored on your phone; delete the app to remove them.</p></div></details>
-
+<p>Go to Profile, then Settings, then Delete account. You'll be asked to sign in again to confirm. This removes your account and unlinks your subscription. It doesn't cancel the subscription itself, so cancel that in your store settings first. Notes, progress and books are stored on your phone; delete the app to remove them.</p></div></details>
 <details><summary>Prayer times are different from my mosque</summary><div>
-<p>Mosques use different calculation methods. Tap the prayer times card on the home screen and choose another method, such as Moonsighting Committee for much of the UK, or change the Asr setting. Times are calculated on your phone from your location, which never leaves the device.</p></div></details>
-
+<p>Mosques use different calculation methods. Tap the prayer times card on the home screen and choose another method, or change the Asr setting. Times are calculated on your phone from your location, which never leaves the device.</p></div></details>
 <details><summary>Audio won't play or download</summary><div>
 <p>Lectures stream over the internet, so check your connection first. If a download stalls, delete it from My Library and try again on Wi-Fi. If it still fails, email us the lecture title and your phone model.</p></div></details>
-
 <details><summary>I found a mistake in a transcript or translation</summary><div>
 <p>Please tell us. Email the lecture or benefit title and roughly where the mistake is, and we'll correct it in a future update.</p></div></details>
-
 <div class="contact"><h3>Contact</h3>
 <p>Email <a href="mailto:hello@ilemapp.com">hello@ilemapp.com</a>. Ilem Ltd, 71-75 Shelton Street, Covent Garden, London WC2H 9JQ.</p></div>
 </main>
